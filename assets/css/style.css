@@ -1,0 +1,25 @@
+body { 
+    background-image: url(../images/darkshire.jpg) !important;
+    background-color: blue !important;
+    padding-top: 100px;
+    background-size:cover;
+    color: gold;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#game-title {
+padding-top: 20px;
+}
+
+#main-container {
+background: gray;
+opacity: .8;
+}
+
+#start-btn-img {
+    padding-top: 30px;
+    height: 100px;
+    width: 500px;
+    padding-right: 35px;
+}
