@@ -1,4 +1,5 @@
 var questions = [];
+var question_count = 0;
 
 var questions = [
     {
@@ -21,12 +22,21 @@ var questions = [
     },
     correctAnswer: "b"
     },
-
-
+    {
+    question: "How many players are allowed to enter the Deadmines in one instance group?",
+    answers: {
+    a: "5",
+    b: "10",
+    c: "20",
+    D: "40",
+    },
+    correctAnswer: "b"
+    }
 
 ]
+console.log(questions.question[0]);
 
-function startGame() {
+function showQuestion() {
 
 }
 
@@ -42,10 +52,28 @@ function startGame() {
 // initiate_question();
 
 $(document).ready();
-$(".main-row").hide();
+$("#time-div").hide();
+$("#question-div").hide();
+$("#answer1-div").hide();
+$("#answer2-div").hide();
+$("#answer3-div").hide();
+$("#answer4-div").hide();
+$("#score-div").hide();
 
 $("#start-button").on("click", function() {
-    $(".main-row").show();
-    $(".main-row").html("Hello");
+    $("#time-div").show();
+    $("#question-div").show();
+    $("#answer1-div").show();
+    $("#answer2-div").show();
+    $("#answer3-div").show();
+    $("#answer4-div").show();
+    $("#score-div").show();
+    // $("#time-div").;
+    $("#question-div").html(questions.question[0]);
+    // $("#answer1-div").show();
+    // $("#answer2-div").show();
+    // $("#answer3-div").show();
+    // $("#answer4-div").show();
+    // $("#score-div").show();
 
 })
